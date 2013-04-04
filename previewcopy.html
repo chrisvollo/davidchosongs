@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title>David Cho - worship music for the soul</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+
+      <!-- Le styles -->
+      <!-- google fonts -->
+      <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css" />
+      <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css" />
+
+      <!-- twitter bootstrap framework -> http://twitter.github.com/bootstrap/ -->
+      <link href="css/bootstrap.css" rel="stylesheet" />
+
+      <!-- fancybox lightbox plugin -> http://fancybox.net/ -->
+      <link href="css/jquery.fancybox-1.3.4.css" rel="stylesheet" />
+
+      <!-- montage plugin for gallerys -> http://tympanus.net/codrops/2011/08/30/automatic-image-montage/ -->
+      <link href="css/montage.css" rel="stylesheet" />
+
+      <!-- icomoon for icons -> http://icomoon.io/ -->
+      <link href="css/icomoon.css" rel="stylesheet" />
+
+      <!-- mediaelement plugin for plaing music -> http://mediaelementjs.com/ -->
+      <link href="css/mediaelementplayer.min.css" rel="stylesheet" />
+
+      <!-- template styles -->
+      <link href="css/main.css" rel="stylesheet" />
+
+      <!-- place for your awesome styles -->
+      <link href="css/mystyle.css" rel="stylesheet" />
+
+      <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+      <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      <!-- Le fav and touch icons -->
+      <link rel="shortcut icon" href="http://localhost/night_club/assets/ico/favicon.ico" />
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.html" />
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.html" />
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.html" />
+      <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.html" />
+   </head>
+   <!-- To use color scheme just add scheme color class to body (body class="purple")
+      Avalible schemes: purple, pink, red and yellow
+      Blue color scheme set by default -->
+   <!-- You can off light animation (body class="no_light") or make it static (body class="no_amination")
+      combine color schemes and amination to get desirable look of the page (body class="no_amination yellow")
+      you also can set every page light effects and color scheme differently -->
+   <body class="red">
+      <div class="container">
+
+         <!-- lights magic is here -->
+         <div class="beams_and_lights">
+            <div class="beams">
+               <div class="beam beam_1"></div>
+               <div class="beam beam_2"></div>
+               <div class="beam beam_3"></div>
+               <div class="beam beam_4"></div>
+            </div>
+            <div class="light light_1"></div>
+            <div class="light light_2"></div>
+            <div class="light light_bg"></div>
+         </div>
+         <!-- /lights -->
+
+         <div class="row">
+
+            <!-- top area with phone and latest tweet -->
+            <div class="top">
+               <div class="span3">
+                  <div class="top_phone">
+                     <span>Booking &nbsp;<b>678-20-2422</b></span>
+                  </div>
+               </div>
+               <div class="span4 offset5 top_twitter">
+                  <span class="tweet query" id="ticker"></span>
+                  <span class="icon-twitter"><a href="#"> Follow Us</a></span>
+               </div>
+            </div>
+            <!-- /top area -->
+
+         </div>
+         <div class="row">
+            <div class="span12">
+
+               <!-- main navigation -->
+               <div class="navbar">
+                  <div class="navbar-inner">
+                     <div class="container">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+                        <a class="brand" href="index.html">David <b>Cho</b></a>
+                        <div class="nav-collapse">
+                           <ul class="nav pull-right">
+                              <li class="active">
+                                 <a href="index.html">Home</a>
+                                 <ul>
+                                    <li><a href="index_ss.html">Homepage with slideshow</a></li>
+                                    <li><a href="index_video.html">Homepage no lightbox video</a></li>
+                                 </ul>
+                              </li>
+                              <li><a href="events.html">Upcoming Events</a></li>
+                              <li>
+                                 <a href="gallery.html">Photo / Video</a>
+                                 <ul>
+                                    <li><a href="gallery_alt.html">Alternative gallery</a></li>
+                                 </ul>
+                              </li>
+                              <li><a href="dj.html">Residents</a></li>
+                              <li><a href="archive.html">Events Archive</a></li>
+                              <li>
+                                 <a href="about.html">Music</a>
+                                 <ul>
+                                    <li><a href="about.html">Our Story</a></li>
+                                    <li><a href="about.html">Lifestyle</a></li>
+                                    <li><a href="about.html">Dresscode</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                 </ul>
+                              </li>
+                              <li><a href="blog.html">Blog</a></li>
+                              <li>
+                                 <a href="booking.html">Booking</a>
+                                 <ul>
+                                    <li><a href="booking.html">Buy Ticket</a></li>
+                                    <li><a href="booking.html">VIP</a></li>
+                                    <li><a href="booking.html">Guest List</a></li>
+                                    <li><a href="booking.html">Party</a></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- /main navigation -->
+               
+            </div>
+         </div>
+         <div class="row">
+            <div class="span4">
+               <div class="box block">
+                  <h2>Welcome!</h2>
+                  <p>
+                     Some welcome text here ...
+                  </p>
+               </div>
+               <!-- booking area -->
+               <div class="box_mini block booking">
+                  <h4>It's Time to <b>Awesome</b> Party</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                  <a href="booking.html" class="btn btn-primary btn-large btn-block">Book Now!</a>
+               </div>
+               <!-- /booking area -->		
+            </div>
+            <div class="span8">
+               <!-- Video -->
+               <!-- paste here your video to involve your audence
+                  !note! This video is only for demostration purpose. Don't use it in your actual website
+                  video made by JON ZOMBIE -> http://www.jonzombie.com -->
+               <div class="block">
+                  <a href="#" class="hover_image various iframe" id="example1">
+                     <span class="mask"></span>
+                     <img src="img/david_guitar_sunrise.jpg" />
+                     <div class="title"><span class="icon-video"></span> Play Video</div>
+                  </a>
+               </div>
+               <!-- /Video -->
+            </div>
+         </div>
+         <section>
+            <header>
+               <h2>Upcoming <b>Events</b></h2>
+            </header>
+            <div class="row">
+               <div class="span4">
+                  <!-- event thumbnail -->
+                  <article class="block event">
+                     <a class="hover_image" href="event_page.html"><span class="mask"></span><img src="img/800x600.jpg" alt="" /></a>
+                     <div class="box_mini">
+                        <header>
+                           <h5><small>nov 1</small> / <a href="event_page.html">Dress To Impress</a></h5>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                           tempor incididunt ut labore et dolore
+                        </p>
+                     </div>
+                  </article>
+               </div>
+               <div class="span4">
+                  <!-- event thumbnail -->
+                  <article class="block event">
+                     <a class="hover_image" href="event_page.html"><span class="mask"></span><img src="img/800x600.jpg" alt="" /></a>
+                     <div class="box_mini">
+                        <header>
+                           <h5><small>nov 8</small> / <a href="event_page.html">Party Paradise</a></h5>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                           tempor incididunt ut labore et dolore
+                        </p>
+                     </div>
+                  </article>
+               </div>
+               <div class="span4">
+                  <!-- event thumbnail -->
+                  <article class="block event">
+                     <a class="hover_image" href="event_page.html"><span class="mask"></span><img src="img/800x600.jpg" alt="" /></a>
+                     <div class="box_mini">
+                        <header>
+                           <h5><small>nov 12</small> / <a href="event_page.html">Igniton Night</a></h5>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                           tempor incididunt ut labore et dolore
+                        </p>
+                     </div>
+                  </article>
+               </div>
+            </div>
+         </section>
+         <section>
+            <div class="row">
+               <div class="span4">
+                  <!-- news feed area -->
+                  <header>
+                     <h3>What's New</h3>
+                  </header>
+                  <div class="box_mini block feed">
+                     <!-- blog feed entry -->
+                     <article>
+                        <div class="date">november 12</div>
+                        <a href="post.html"><img src="img/50x50.jpg" alt="" /></a>
+                        <div class="content">
+                           <h5><a href="post.html">Almost Back</a></h5>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              tempor incididunt ut labore et dolore magna aliqua... <a href="post.html" title="">(continue)</a>
+                           </p>
+                        </div>
+                     </article>
+                     <!-- blog feed entry -->
+                     <article>
+                        <div class="date">november 10</div>
+                        <a href="post.html"><img src="img/50x50.jpg" alt="" /></a>
+                        <div class="content">
+                           <h5><a href="post.html">You'd Laugh</a></h5>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              tempor incididunt ut labore et dolore magna aliqua... <a href="post.html" title="">(continue)</a>
+                           </p>
+                        </div>
+                     </article>
+                     <!-- blog feed entry -->
+                     <article>
+                        <div class="date">november 7</div>
+                        <a href="post.html"><img src="img/50x50.jpg" alt="" /></a>
+                        <div class="content">
+                           <h5><a href="post.html">Involved in Music</a></h5>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              tempor incididunt ut labore et dolore magna aliqua... <a href="post.html" title="">(continue)</a>
+                           </p>
+                        </div>
+                     </article>
+                     <!-- blog feed entry -->
+                     <article>
+                        <div class="date">november 3</div>
+                        <a href="post.html"><img src="img/50x50.jpg" alt="" /></a>
+                        <div class="content">
+                           <h5><a href="post.html">Don't Worry</a></h5>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              tempor incididunt ut labore et dolore magna aliqua... <a href="post.html" title="">(continue)</a>
+                           </p>
+                        </div>
+                     </article>
+                  </div>
+                  <!-- /news feed area -->
+                  <!-- subscribe area -->
+                  <h4>Get Latest News</h4>
+                  <div class="box_mini block subscribe">
+                     <form class="form-search">
+                        <label>E-mail</label> &nbsp;
+                        <div class="input-append">
+                           <input class="input-medium" id="appendedInputButton" size="16" type="text" /><button class="btn" type="button">Subscribe!</button>
+                        </div>
+                     </form>
+                  </div>
+                  <!-- /subscribe area -->			
+               </div>
+               <div class="span8">
+                  <header>
+                     <h3>Photo and Video</h3>
+                  </header>
+                  <!-- MONTAGE CONTAINER -->
+                  <!-- !note! you can paste images with any dimentions, it will automatically arranged. -->
+                  <!-- Montage container combined with fancybox plugin for lightbox -->
+                  <!-- !note! Videos is only for demostration purpose. Don't use it in your actual website
+                     videos made by JON ZOMBIE -> http://www.jonzombie.com -->
+                  <div class="am-container">
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage video item -->
+                     <a href="http://player.vimeo.com/video/27618935?title=0&amp;byline=0&amp;portrait=0&amp;color=00aaff" rel="example_group" class="hover_image various iframe">
+                     <span class="icon-video"></span>
+                     <span class="mask">Play video</span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage video item -->
+                     <a href="http://player.vimeo.com/video/27618935?title=0&amp;byline=0&amp;portrait=0&amp;color=00aaff" rel="example_group" class="hover_image various iframe">
+                     <span class="icon-video"></span>
+                     <span class="mask">Play video</span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage video item -->
+                     <a href="http://player.vimeo.com/video/27618935?title=0&amp;byline=0&amp;portrait=0&amp;color=00aaff" rel="example_group" class="hover_image various iframe">
+                     <span class="icon-video"></span>
+                     <span class="mask">Play video</span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage video item -->
+                     <a href="http://player.vimeo.com/video/27618935?title=0&amp;byline=0&amp;portrait=0&amp;color=00aaff" rel="example_group" class="hover_image various iframe">
+                     <span class="icon-video"></span>
+                     <span class="mask">Play video</span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage video item -->
+                     <a href="http://player.vimeo.com/video/27618935?title=0&amp;byline=0&amp;portrait=0&amp;color=00aaff" rel="example_group" class="hover_image various iframe">
+                     <span class="icon-video"></span>
+                     <span class="mask">Play video</span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage video item -->
+                     <a href="http://player.vimeo.com/video/27618935?title=0&amp;byline=0&amp;portrait=0&amp;color=00aaff" rel="example_group" class="hover_image various iframe">
+                     <span class="icon-video"></span>
+                     <span class="mask">Play video</span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                     <!-- montage image item -->
+                     <a href="img/800x600.jpg" rel="example_group" class="hover_image">
+                     <span class="mask"></span>
+                     <img src="img/120x90.jpg" >
+                     </a>	
+                     <!-- montage video item -->
+                     <a href="http://player.vimeo.com/video/27618935?title=0&amp;byline=0&amp;portrait=0&amp;color=00aaff" rel="example_group" class="hover_image various iframe">
+                     <span class="icon-video"></span>
+                     <span class="mask">Play video</span>
+                     <img src="img/120x160.jpg" >
+                     </a>	
+                  </div>
+                  <!-- /MONTAGE CONTAINER -->
+                  <div class="clearfix"></div>
+                  <div class="box_mini block">
+                     <a href="gallery.html" class="btn">More Photo and Video</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- main footer -->
+         <footer>
+            <section>
+               <div class="row">
+                  <div class="span12">
+                     <!-- footer navigation -->
+                     <div class="footer_nav">
+                        <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="events.html">Upcoming Events</a></li>
+                           <li><a href="gallery.html">Photo / Video</a></li>
+                           <li><a href="dj.html">Residents</a></li>
+                           <li><a href="archive.html">Events Archive</a></li>
+                           <li><a href="about.html">Nightclub Life</a></li>
+                           <li><a href="blog.html">Blog</a></li>
+                           <li><a href="booking.html">Booking</a></li>
+                        </ul>
+                     </div>
+                     <!-- /footer navigation -->			
+                  </div>
+               </div>
+            </section>
+         </footer>
+         <!-- /main footer -->
+      </div>
+      <!-- container -->
+      <!-- Le javascript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <!-- js jquery -> http://jquery.com/ -->
+      <script src="js/jquery.js"></script>
+
+      <!-- twitter bootstrap framework -> http://twitter.github.com/bootstrap/ -->
+      <script src="js/bootstrap.js"></script>
+
+      <!-- plugin for twitter display -> http://tweet.seaofclouds.com/ -->
+      <!-- I am using envato twitter acount as the demo. Don't forget paste yours -->
+      <script type="text/javascript" src="js/jquery.tweet.js"></script>
+      <script type="text/javascript">
+         //settings for the top twitter area
+              jQuery(function($){
+                $("#ticker").tweet({
+                  username: "I_am_dcho", //!paste here your twitter username!
+                  page: 1,
+                  count: 20,
+                  loading_text: "loading tweets..."
+                }).bind("loaded", function() {
+                  var ul = $(this).find(".tweet_list");
+                  var ticker = function() {
+                    setTimeout(function() {
+                      ul.find('li:first').animate( {marginTop: '-4.7em'}, 850, function() {
+                        $(this).detach().appendTo(ul).removeAttr('style');
+                      });
+                      ticker();
+                    }, 5000);
+                  };
+                  ticker();
+                });
+              });
+         
+              //settings for the sidebar twitter area
+              jQuery(function($){
+                $(".twitter").tweet({
+                  join_text: "auto",
+                  username: "I_am_dcho", //!paste here your twitter username!
+                  count: 3,
+                  auto_join_text_default: " we said, ",
+                  auto_join_text_ed: " we ",
+                  auto_join_text_ing: " we were ",
+                  auto_join_text_reply: " we replied ",
+                  auto_join_text_url: " we were checking out ",
+                  loading_text: "loading tweets..."
+                });
+              });
+         
+      </script>
+
+      <!-- Plugin for responsive video -> http://fitvidsjs.com/ -->
+      <script src="js/jquery.fitvids.js"></script>
+      <script>
+         $(".container").fitVids();
+         $(".container").fitVids({ customSelector: "iframe[src^='http://socialcam.com']"});  
+      </script>
+
+      <!-- Montage plugin for gallerys -> http://tympanus.net/codrops/2011/08/30/automatic-image-montage/ -->
+      <script src="js/jquery.montage.js"></script>
+      <script type="text/javascript">
+         $(function() {
+         	
+         	var $container 	= $('.am-container'),
+         		$imgs		= $container.find('img').hide(),
+         		totalImgs	= $imgs.length,
+         		cnt			= 0;
+         	
+         	$imgs.each(function(i) {
+         		var $img	= $(this);
+         		$('<img/>').load(function() {
+         			++cnt;
+         			if( cnt === totalImgs ) {
+         				$imgs.show();
+         				$container.montage({
+         
+         					fillLastRow		: true,
+         					alternateHeight	: true,
+         					alternateHeightRange : {
+         						min	: 50,
+         						max	: 150
+         					},
+         					margin:1
+         				});
+         				
+         				
+         			}
+         		}).attr('src',$img.attr('src'));
+         	});	
+         	
+         });
+         
+         
+         
+         // mini montage for gallerys
+         $(function() {
+         	
+         	var $container 	= $('.am-container-mini'),
+         		$imgs		= $container.find('img').hide(),
+         		totalImgs	= $imgs.length,
+         		cnt			= 0;
+         	
+         	$imgs.each(function(i) {
+         		var $img	= $(this);
+         		$('<img/>').load(function() {
+         			++cnt;
+         			if( cnt === totalImgs ) {
+         				$imgs.show();
+         				$container.montage({
+         
+         					fillLastRow		: true,
+         					alternateHeight	: true,
+         					alternateHeightRange : {
+         						min	: 30,
+         						max	: 70
+         					},
+         					margin:1
+         				});
+         				
+         				
+         			}
+         		}).attr('src',$img.attr('src'));
+         	});	
+         	
+         });
+
+
+          // big montage for gallerys
+         $(function() {
+            
+            var $container    = $('.am-container-big'),
+               $imgs    = $container.find('img').hide(),
+               totalImgs   = $imgs.length,
+               cnt         = 0;
+            
+            $imgs.each(function(i) {
+               var $img = $(this);
+               $('<img/>').load(function() {
+                  ++cnt;
+                  if( cnt === totalImgs ) {
+                     $imgs.show();
+                     $container.montage({
+         
+                        fillLastRow    : true,
+                        alternateHeight   : true,
+                        alternateHeightRange : {
+                           min   : 120,
+                           max   : 200
+                        },
+                        margin:1
+                     });
+                     
+                     
+                  }
+               }).attr('src',$img.attr('src'));
+            });   
+            
+         });
+      </script>
+
+      <!-- mediaelement plugin for plaing music -> http://mediaelementjs.com/ -->
+      <script src="js/mediaelement-and-player.min.js"></script>
+      <script>
+         $('audio,video').mediaelementplayer();
+      </script>
+
+      <!-- fancybox lightbox plugin -> http://fancybox.net/ -->
+      <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function() {
+         	/*
+         	*   Examples - images
+         	*/
+         
+         	$("a#example1").fancybox({
+         		'padding'		    : '0',
+         		'transitionIn'	: 'fade',
+         		'transitionOut'	: 'fade',
+         		'overlayColor' : '#000',
+         		'showNavArrows' : false,
+         		'titlePosition'		: 'outside',
+         		'overlayOpacity' : 0.7,
+         		'width'		: 960,
+         		'height' : 540
+         
+         	});
+         
+         	$("a#example2").fancybox({
+         		'overlayShow'	: false,
+         		'transitionIn'	: 'elastic',
+         		'transitionOut'	: 'elastic'
+         	});
+         
+         	$("a#example3").fancybox({
+         		'transitionIn'	: 'none',
+         		'transitionOut'	: 'none'	
+         	});
+         
+         	$("a#example4").fancybox({
+         		'opacity'		: true,
+         		'overlayShow'	: false,
+         		'transitionIn'	: 'elastic',
+         		'transitionOut'	: 'none'
+         	});
+         
+         	$("a#example5").fancybox();
+         
+         	$("a#example6").fancybox({
+         		'titlePosition'		: 'outside',
+         		'overlayColor'		: '#000',
+         		'overlayOpacity'	: 0.9
+         	});
+         
+         	$("a#example7").fancybox({
+         		'titlePosition'	: 'inside'
+         	});
+         
+         	$("a#example8").fancybox({
+         		'titlePosition'	: 'over'
+         	});
+         
+         	$("a[rel=example_group]").fancybox({
+         		'padding'		    : '0',
+         		'transitionIn'	: 'fade',
+         		'transitionOut'	: 'fade',
+         		'overlayColor' : '#000',
+         		'showNavArrows' : true,
+         		'titlePosition'		: 'outside',
+         		'overlayOpacity' : 0.7
+         
+         	});
+         
+         	/*
+         	*   Examples - various
+         	*/
+         
+         	$("#various1").fancybox({
+         		'titlePosition'		: 'inside',
+         		'transitionIn'		: 'none',
+         		'transitionOut'		: 'none'
+         	});
+         
+         	$("#various2").fancybox();
+         
+         	$("#various3").fancybox({
+         		'width'				: '75%',
+         		'height'			: '75%',
+         		'autoScale'			: false,
+         		'transitionIn'		: 'none',
+         		'transitionOut'		: 'none',
+         		'type'				: 'iframe'
+         	});
+         
+         	$("#various4").fancybox({
+         		'padding'			: 0,
+         		'autoScale'			: false,
+         		'transitionIn'		: 'none',
+         		'transitionOut'		: 'none'
+         	});
+         });
+      </script>
+   </body>
+</html>

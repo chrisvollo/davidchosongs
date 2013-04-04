@@ -1,0 +1,1734 @@
+/*"Nigt Life" premium template by Rem Tsoy*/
+
+
+/*Hi there.
+Thank You for purchasing my template. Hope it will be usefull for you.
+This stuff work with awesome twitter bootestrap framework -> http://twitter.github.com/bootstrap/index.html
+You can easy add any component from this framework.
+If you have any questions have free to contact me -> remirtsoy@gmail.com
+Don't forget to check documentation.
+Happy coding :)*/
+
+/*!note! I have created mystyle.css stylesheet file for you.
+If you want to add some more styling better way to do it there.*/
+
+
+/************************************************
+Basic elements and typography
+************************************************/
+
+body {
+	background: url(../img/bar_bg.png) repeat #0C0C0C;
+	color: #F1F1F1;
+	font-size: 12px;
+	line-height: 1.6em;
+	font-family: 'Open Sans', sans-serif;/*font from google fonts -> http://www.google.com/webfonts*/
+	-ms-overflow-x:hidden;
+	overflow-x:hidden;
+}
+
+a {
+	color: #0088cc;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #00aaff;
+}
+
+h1, h2, h3, h4, h5 {
+	color: #fff;
+	font-weight: normal;
+	font-family:'Lucida Grande' Arial, Helvetica, sans-serif ;
+	text-transform: uppercase;
+	text-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.4);
+}
+
+h5 {
+ 	font-weight: bold;
+}
+
+section {
+	padding-top:60px;
+}
+
+hr {
+	border-top: 1px solid #252525;
+	border-bottom: 1px solid #3D3D3D;
+}
+
+
+/************************************************
+Basic blocks for content
+************************************************/
+/*Most content wraps in the blocks - box(with big padding) and box_mini(less padding)*/ 
+.block {
+	margin-bottom: 30px;
+	box-shadow: 0 1px 1px #000, inset 0 0 1px hsla(0, 0%, 100%, 0.25);
+}
+
+.box, .box_mini {
+	padding:  35px;
+	background: url(../img/dig_bg.png) repeat #3A3A3A;
+}
+
+.box_mini {
+	padding: 20px;
+}
+
+header.box {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+header.box_mini {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+header.box h1, header.box h2, header.box h3, header.box h4, header.box h5, header.box_mini h1, header.box_mini h2, header.box_mini h3, header.box_mini h4, header.box_mini h5  {
+	margin: 0;
+}
+
+
+/************************************************
+Forms
+************************************************/
+/*Froms from bootstrap framework more information here -> http://twitter.github.com/bootstrap/base-css.html#forms*/
+.input-append input, .input-append select, .input-append .uneditable-input, select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+	border-radius: 0;
+	background: #1D1D1D;
+	border: 1px solid #434343;
+	box-shadow: 0 0 7px hsla(0, 0%, 0%, 0.3) inset;
+	color: #fff;
+}
+
+.form-search .input-append .btn {
+	border-radius: 0;
+}
+
+
+/************************************************
+brand ( logo )
+************************************************/
+.navbar .brand {
+	line-height: 1em;
+	top: 3px;
+	position: relative;	
+	text-indent: -9999px;
+	background: url(../img/logo.png) no-repeat;
+	width: 119px;
+}
+
+
+/************************************************
+Page title
+************************************************/
+.page_title {
+	font-family: 'Oswald', sans-serif; /*font from google fonts -> http://www.google.com/webfonts*/
+	letter-spacing: 1px;
+}
+
+.page_title small {
+	font-family: 'Open Sans', sans-serif; /*font from google fonts -> http://www.google.com/webfonts*/
+	text-transform: lowercase;
+	letter-spacing: 0;
+	font-size: 13px;
+	color: #E7E7E7;
+}
+
+
+/************************************************
+Hover image
+************************************************/
+/*effect of hovering image page using in most pages*/
+
+
+a.hover_image {
+	display: block;
+	position: relative;
+	text-align: center;
+}
+
+a.hover_image .mask {
+	position: absolute;
+	display: block;
+	background: url(../img/dig_bg.png) repeat #0088cc;
+	width: 100%;
+	height: 100%;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	transition: 0.5s all;
+	z-index: 3;
+	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7) inset;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.7) inset;
+}
+
+a.hover_image .title {
+	position: absolute;
+	font-size: 25px;
+	top: 50%;
+	padding: 10px 15px;
+	background: #000;
+	background: rgba(0, 0, 0, 0.54);
+	z-index: 4;
+	color: #fff;
+	margin-top: -30px;
+	display: inline;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: block
+}
+
+a.hover_image .title [class^="icon-"] {
+	position: relative;
+	top: 7px;
+	background: none;
+	font-size: 20px;
+	line-height: 1em;
+	height: 32px;
+}
+
+a.hover_image:hover .mask {
+	opacity: 0.8;
+}
+
+/*you can paste any icomoon icon into hover image*/
+a.hover_image > [class^="icon-"] {
+	position: absolute;
+	font-size: 15px;
+	width: 25px;
+	height: 25px;
+	z-index: 4;
+	color: #fff;
+	display: block;
+	background: #000;
+	background: hsla(0, 0%, 0%, 0.5);
+	line-height: 25px;
+	top: 50%;
+	margin-top: -14px;
+	left: 50%;
+	margin-left: -14px;
+	border-radius: 50%;
+	text-shadow: 0 0 2px #000;
+}
+
+
+
+/************************************************
+Top section
+************************************************/
+.top {
+	position: relative;
+	overflow: hidden;
+}
+
+/*displaing phone for booking on top of every page*/
+.top_phone {
+	text-transform: uppercase;
+	font-size: 10px;
+	position: absolute;
+	bottom: 0;
+	color: #BEBEBE;
+}
+
+.top_phone b {
+	font-size: 14px;
+	color: #fff;
+}
+
+
+
+/************************************************
+Event
+************************************************/
+/*displaing event thumbnails actual using: index.html and events.html*/
+.event small {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.event .box_mini {
+	position: relative;
+	border-top: 1px solid #0088cc;
+}
+
+.event .box_mini:before {
+	position: absolute;
+	content: '';
+	height: 15px;
+	width: 15px;
+	background: #3A3A3A;
+	top: -9px;
+	left: 20px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border-top: 1px solid #0088cc;
+	border-left: 1px solid #0088cc;
+	z-index: 3;
+}
+
+/************************************************
+Booking
+************************************************/
+/*booking container (more attractive area) actual using: index.html, blog.html, post.html, #, #, #, #*/
+.booking {
+	box-shadow: 0 1px 1px #000 , 0 2px 2px hsla(0, 0%, 0%, 0.6), 0 0 35px hsla(200, 70%, 50%, 0.15), inset 0 0 1px hsla(0, 0%, 100%, 0.35);
+	background: url(../img/dig_bg.png) repeat #252525;
+}
+
+.booking input {
+	border: 1px solid #2C2C2C;
+}
+
+
+
+
+/************************************************
+News feed
+************************************************/
+/*Styles for news feed actual using on home page (index.html) blog sidebar (blog.html) and post sidebar (post.html)*/
+.feed article {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #3D3D3D;
+	position: relative;
+}
+
+.feed article:after {
+	position: absolute;
+	content: '';
+	height: 1px;
+	width: 100%;
+	background: #252525;
+	bottom: 0;
+	left: 0;
+}
+
+.feed article:last-child {
+	border: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.feed article:last-child:after {
+	display: none;
+}
+
+.feed img {
+	float: left;
+	margin-right: 15px;
+	box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.5);
+}
+
+.feed .content {
+	display: table;
+}
+
+.feed p {
+	line-height: 1.5em;
+	font-size: 11px;
+	color: #B4B4B4;
+}
+
+.feed h5 {
+	margin: 0;
+	font-size: 11px;
+	margin-bottom: 5px;
+}
+
+.feed .date {
+	position: absolute;
+	font-size: 11px;
+	right: 0;
+	top: 2px;
+	font-weight: bold;
+	color: #222;
+	text-shadow: 0 1px 1px hsla(0, 100%, 100%, 0.06);
+}
+
+.subscribe form {
+	margin-bottom: 0;
+}
+
+
+
+/************************************************
+Blog
+************************************************/
+/*styles for blog layout (post.html and blog.html)*/
+.post header small {
+	font-size: 11px;
+}
+
+.post .content {
+	font-size: 13px;
+	line-height: 1.6em;
+}
+
+.sidebar .nav-tabs.nav-stacked {
+	margin-right: 19px;
+}
+
+
+/************************************************
+Comments
+************************************************/
+/*Comment area for blog post actual using in post.html (bottom of the page)*/
+.comments  ul {
+	list-style: none;
+	margin: 0;
+}
+
+.comments img.avatar {
+	float: left;
+	margin-right: 10px;
+	-webkit-box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.5);
+	box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.5);
+}
+
+.comments .autor {
+	font-size: 9px;
+	margin-bottom: 3px;
+}
+
+
+.comments .comment_inner {
+	margin: 0;
+	padding: 15px;
+	background: #222;
+	font-size: 12px;
+	display: table;
+	position: relative;
+}
+
+.comments .comment_inner:before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: -6px;
+	width: 15px;
+	height: 15px;
+	-webkit-transform: skew(40deg,0deg);
+	-moz-transform: skew(40deg,0deg);
+	-o-transform: skew(40deg,0deg);
+	-ms-transform: skew(40deg,0deg);
+	transform: skew(40deg,0deg);
+	z-index: 2;
+	background: #222;
+}
+
+.comments .comment_inner p {
+	margin: 5px 0;
+}
+
+.comments li {
+	margin: 0px;
+	display: block;
+	padding: 20px 0;
+}
+
+.comments li:last-child {
+	padding-bottom: 0;
+}
+
+.comments > ul > li:first-child {
+	padding-top: 0;
+}
+
+.comments li li {
+	margin-left: 61px;
+	padding-left: 20px;
+	border-left: 1px solid #333;
+	position: relative;
+}
+
+.comments li li:before {
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 1px;
+	border-top: 1px solid #333;
+	left: 0;
+	top: 45px;
+}
+
+.comments .reply {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+
+/************************************************
+Pagination
+************************************************/
+/*Pagination from bootstrap framework more information here -> http://twitter.github.com/bootstrap/components.html#pagination*/
+.pagination ul > li:first-child > a, .pagination ul > li:first-child > span, .pagination ul > li:last-child > a, .pagination ul > li:last-child > span {
+	border-radius: 0
+}
+
+.pagination ul > li > a, .pagination ul > li > span {
+	background: url(../img/dig_bg.png) repeat #3A3A3A;
+	border: 1px solid #292929;
+	border-left-width: 0;
+}
+
+.pagination ul > li > a:hover, .pagination ul > .active > a, .pagination ul > .active > span {
+	background: url(../img/dig_bg.png) repeat #292929;
+}
+
+
+/************************************************
+Twitter
+************************************************/
+/*Twitter area actual using in blog.html and post.html on sidebar*/
+/*work with tweet plugin ->http://tweet.seaofclouds.com/ */
+/*made with icomoon icons -> http://icomoon.io*/
+.twitter ul.tweet_list {
+	list-style: none;
+	margin-left: 0;
+}
+
+.twitter ul.tweet_list li {
+	position: relative;
+	padding: 0.8em;
+	padding-left: 30px;
+}
+
+.twitter ul.tweet_list li:before {
+	content: '\2a';
+	position: absolute;
+	color: #202020;
+	text-shadow: 0 1px 10px hsla(200, 70%, 50%, 0.2), 0 1px 1px hsla(0, 100%, 100%, 0.1);
+	left: 0;
+	top: 16px;
+	font-size: 18px;
+	font-family: "icomoon";
+}
+
+.tweet_list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow-y: hidden;
+}
+
+.tweet_list li {
+	overflow: hidden;
+	list-style-type: none;
+}
+
+.tweet_list .tweet_avatar {
+	padding-right: .8em; float: left;
+}
+
+.tweet_list .tweet_avatar img {
+	vertical-align: middle;
+}
+
+
+
+/*lastest tweet displaing on top of every page*/
+#ticker {
+	height: 47px;
+}
+
+#ticker ul.tweet_list {
+	height:4.7em;
+	overflow-y:hidden;
+	margin: 0;
+	padding: 0;
+}
+
+#ticker .tweet_list li {
+	height: 4.7em;
+	line-height: 16px;
+}
+
+
+.top_twitter .icon-twitter {
+	font-size: 20px;
+	position: absolute;
+	bottom: 2px;
+	text-shadow: 0 0 8px hsla(200, 70%, 50%, 1), 0 1px 2px hsla(0, 0%, 0%, 0.7);
+	color: #fff;
+}
+
+.top_twitter .icon-twitter a {
+	font-size: 10px;
+	text-shadow:none;
+}
+
+.top_twitter span.tweet {
+	display: block;
+	margin-left: 33px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 9px;
+	position: relative;
+	background: #242424;
+	color: #fff;
+	font-size: 11px;
+}
+
+.top_twitter span.tweet:before {
+	position: absolute;
+	content: '';
+	bottom: 0px;
+	left: -3px;
+	width: 10px;
+	height: 10px;
+	background: #242424;
+	-webkit-transform: skew(-40deg,0deg);
+	-moz-transform: skew(-40deg,0deg);
+	-o-transform: skew(-40deg,0deg);
+	-ms-transform: skew(-40deg,0deg);
+	transform: skew(-40deg,0deg);
+}
+
+
+/************************************************
+Slideshow
+************************************************/
+/*Slideshow from bootstrap framework more information here -> http://twitter.github.com/bootstrap/javascript.html#carousel*/
+/*made with icomoon icons -> http://icomoon.io*/
+.carousel {
+	margin-bottom: 0;
+}
+
+.carousel-control {
+	font-family: 'icomoon';
+	border: none;
+	background: #0088cc;
+	display: block;
+	border-radius: 0;
+	top: 50%;
+	margin-top: -20px;
+	text-align: center;
+	color: #fff !important;
+}
+
+.carousel-control.left:before, .carousel-control.right:before {
+	display: block;
+	line-height: 40px;
+	margin: auto;
+	font-size: 22px;
+}
+
+.carousel-control.left:before {
+	content: '\e007';
+}
+
+.carousel-control.right:before {
+	content: '\e006';
+}
+
+.carousel-caption {
+	background: hsla(0, 0%, 0%, 0.55);
+}
+
+
+
+/************************************************
+Testimonials
+************************************************/
+/*styles for testimonials actual using you can find in archive_event.html file*/
+.testimonials blockquote {
+	border: none;
+	padding: 9px;
+	margin-bottom: 20px;
+	position: relative;
+	display: table;
+	background: #808080;
+	box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.25);
+}
+
+.testimonials blockquote:before, .testimonials blockquote:after {
+	position: absolute;
+	content: '';
+	top: 0px;
+	left: -6px;
+	width: 15px;
+	height: 15px;
+	-webkit-transform: skew(40deg,0deg);
+	-moz-transform: skew(40deg,0deg);
+	-o-transform: skew(40deg,0deg);
+	-ms-transform: skew(40deg,0deg);
+	transform: skew(40deg,0deg);
+}
+
+.testimonials blockquote:before {
+	z-index: 2;
+	background: #808080;
+	border-bottom: none;
+	border-right: none;
+}
+
+.testimonials blockquote p {
+	font-size: 12px;
+	line-height: 1.5em;
+	color: #fff;
+}
+
+.testimonials img {
+	float: left;
+	margin-right: 9px;
+}
+
+.testimonials .autor {
+	margin-bottom: 2px;
+	font-size: 11px;
+	position: relative;
+}
+
+
+
+
+/************************************************
+Footer
+************************************************/
+/*simple footer navigation list*/
+.footer_nav {
+	padding-bottom: 68px;
+}
+
+.footer_nav ul {
+	list-style: none;
+	margin: 0;
+}
+
+.footer_nav ul li {
+	float: left;
+	margin-right: 15px;
+}
+
+.footer_nav ul li a {
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+
+
+
+/************************************************
+Main navigation
+************************************************/
+/*Navbar from bootstrap framework more information here -> http://twitter.github.com/bootstrap/components.html#navbar*/
+.navbar-inner {
+	background: #2B2B2B;
+	border: none;
+	border-radius: 0;
+	background: hsla(0, 0%, 17%, 0.35);
+	-webkit-box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.7);
+	box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.7);
+	filter:none;
+}
+
+.navbar {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.navbar .nav > li > a {
+	text-shadow:none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: bold;
+	-webkit-transition: 0.3s all;
+	-moz-transition: 0.3s all;
+	-o-transition: 0.3s all;
+	-ms-transition: 0.3s all;
+	transition: 0.3s all;
+}
+
+.navbar .nav > li > a:hover {
+	color: #fff;
+	background: #0088cc;
+	-webkit-box-shadow: 0 1px 1px #000, inset 0 0 1px hsla(0, 0%, 100%, 0.2);
+	box-shadow: 0 1px 1px #000, inset 0 0 1px hsla(0, 0%, 100%, 0.2);
+}
+
+.navbar .brand {
+	text-shadow:none;
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+	color: #555555 !important;
+	background-color: #e5e5e5 !important;
+}
+
+
+/************************************************
+Dropdown
+************************************************/
+/*making dropdown avalible from hover (don't natively support by bootstrap)*/
+.navbar  li {
+	overflow: hidden;
+}
+
+.navbar li:hover > ul {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	transition: 0.5s all;
+} 
+
+.navbar li > ul {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	position: absolute;
+	list-style: none;
+	margin: 0;
+	width: 120px;
+	visibility: hidden;
+	background: #181818;
+	display: block;
+	-webkit-box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.5);
+	box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.5);
+	z-index: 999;
+}
+
+.navbar li > ul a {
+	padding: 7px 15px 7px;
+	display: block;
+	color: #fff !important;
+	text-decoration: none;
+	border-top: 1px solid #131313;
+	text-transform: uppercase;
+	font-size: 10px;
+	-webkit-transition: 0.2s all;
+	-moz-transition: 0.2s all;
+	-o-transition: 0.2s all;
+	-ms-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.navbar li > ul a:hover {
+	background: #0088cc;
+}
+
+
+
+/************************************************
+Main navigation button (for small displays)
+************************************************/
+.navbar .btn-navbar {
+	background: #000;
+	background: hsla(0, 0%, 0%, 0.5)
+}
+
+.navbar .btn-navbar:hover {
+	background: #000;
+	background: hsla(0, 0%, 0%, 0.7)
+}
+
+.navbar .btn-navbar .icon-bar {
+	background-color: #A2A2A2;
+}
+
+
+
+/************************************************
+Staked nav
+************************************************/
+/*Navs from bootstrap framework more information here -> http://twitter.github.com/bootstrap/components.html#navs*/
+.nav-tabs.nav-stacked {
+	margin-right: 40px;
+}
+
+.nav-tabs.nav-stacked small {
+	opacity: 0.5;
+}
+
+.nav-tabs.nav-stacked > li > a {
+	border-radius: 0 !important;
+	background: #090909;
+	border: 1px solid #000;
+	position: relative;
+	z-index: 3;
+	-webkit-transition: 0.3s all;
+}
+
+.nav-tabs.nav-stacked > li > a:hover {
+	border: 1px solid #000;
+	background: #000;
+}
+
+.nav-tabs.nav-stacked > li.active > a {
+	background: #0088cc;
+	color: #fff;
+	border-right: 1px solid #0088cc;
+	text-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.5);
+}
+
+.nav-tabs.nav-stacked > li.active > a:before {
+	position: absolute;
+	content: '';
+	height: 25px;
+	width: 26px;
+	background: #0088cc;
+	right: -16px;
+	top: 5px;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	transform:rotate(45deg);
+	border-right: 1px solid #000;
+	border-top: 1px solid #000;
+	z-index: 2;
+}
+
+
+
+/************************************************
+Buttons
+************************************************/
+/*Buttons from bootstrap framework more information here -> http://twitter.github.com/bootstrap/base-css.html#buttons*/
+.btn {
+	background: #fff;
+	border-radius: 0;
+	color: #1F1F1F !important;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-family: 'Droid Sans',Tahoma,'Open Sans', sans-serif;
+	text-shadow:none;
+	-webkit-box-shadow: 0 1px 2px #000;
+	box-shadow: 0 1px 2px #000;
+}
+
+.btn-primary {
+	background: #0088cc;
+	color: #fff !important;
+	text-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.5);
+}
+
+.btn-primary:hover {
+	background: #016fa6;
+
+}
+
+
+
+/************************************************
+Beams and lights animation on top
+************************************************/
+/*if you didn't want light animation on top just add "no_light" class to body (body class="no_light") */
+/*if you want light and beams without animation add "no_amination" class to body (body class="no_amination")*/
+
+.beams_and_lights {
+	position: relative;
+}
+
+.beam {
+	overflow: hidden;
+	position: fixed;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	-webkit-transform: skewX(-20deg);
+	-moz-transform: skewX(-20deg);
+	-o-transform: skewX(-20deg);
+	-ms-transform: skewX(-20deg);
+	transform: skewX(-20deg);
+	background: hsla(200, 100%, 20%, 0.05);
+	-webkit-box-shadow: 0 0 3px hsla(200, 70%, 50%, 0.01);
+	box-shadow: 0 0 3px hsla(200, 70%, 50%, 0.01);
+}
+
+.beam_1 {
+	width: 200px;
+	height: 900px;
+	left: 35%;
+	-webkit-animation: beam 12s infinite;
+	-moz-animation: beam 12s infinite;
+	-ms-animation: beam 12s infinite;
+	-o-animation: beam 12s infinite;
+	animation: beam 12s infinite;
+}
+
+.beam_2 {
+	width: 100px;
+	height: 500px;
+	left: 55%;
+	-webkit-animation: beam 7s infinite;
+	-moz-animation: beam 7s infinite;
+	-ms-animation: beam 7s infinite;
+	-o-animation: beam 7s infinite;
+	animation: beam 7s infinite;
+}
+
+.beam_3 {
+	width: 150px;
+	height: 800px;
+	left: 49%;
+	-webkit-animation: beam 10s infinite;
+	-moz-animation: beam 10s infinite;
+	-ms-animation: beam 10s infinite;
+	-o-animation: beam 10s infinite;
+	animation: beam 10s infinite;
+}
+
+.beam_4 {
+	width: 300px;
+	height: 875px;
+	left: 41%;
+	-webkit-animation: beam 14s infinite;
+	-moz-animation: beam 14s infinite;
+	-ms-animation: beam 14s infinite;
+	-o-animation: beam 14s infinite;
+	animation: beam 14s infinite;
+}
+
+.light {
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+
+.light_1 {
+	width: 350px;
+	height: 310px;
+	background: url(../img/light_1.png) repeat;
+	top: -75px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+	left: 42%;
+	-webkit-animation: light 12s infinite;
+	-moz-animation: light 12s infinite;
+	-ms-animation: light 12s infinite;
+	-o-animation: light 12s infinite;
+	animation: light 12s infinite;
+}
+
+.light_2 {
+	width: 300px;
+	height: 300px;
+	background: url(../img/light_2.png) repeat;
+	top: -7px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	filter: alpha(opacity=20);
+	opacity: 0.2;
+	left: 60%;
+	-webkit-animation: light 5s infinite;
+	-moz-animation: light 5s infinite;
+	-ms-animation: light 5s infinite;
+	-o-animation: light 5s infinite;
+	animation: light 5s infinite;
+}
+
+.light_bg {
+	width: 800px;
+	height: 137px;
+	background: url(../img/light_bg.png) repeat;
+	top: 0px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=7)";
+	filter: alpha(opacity=7);
+	opacity: 0.07;
+	left: 27%;
+    -webkit-animation: light 10s infinite;
+	-moz-animation: light 10s infinite;
+	-ms-animation: light 10s infinite;
+	-o-animation: light 10s infinite;
+	animation: light 10s infinite;
+}
+
+body.no_light .lights_and_lights  {
+	display: none;
+}
+
+
+body.no_animation .beam, body.no_animation .light {
+	-webkit-animation: none;
+	-moz-animation: none;
+	-ms-animation: none;
+	-o-animation: none;
+	animation: none;
+}
+
+body.no_animation .beam {
+	opacity: 0.5;
+}
+
+body.no_animation .light_bg, body.no_animation .light_2 {
+	opacity: 0.5;
+}
+
+
+
+
+@keyframes light {
+ 0% {
+   	opacity: 0.3;
+ }
+ 50% {
+   	opacity: 1;
+ }
+ 100% {
+   	opacity: 0.3;
+ }
+}
+
+
+@keyframes light {
+ 0% {
+   	opacity: 0.3;
+ }
+ 50% {
+   	opacity: 0.8;
+ }
+ 100% {
+   	opacity: 0.3;
+ }
+}
+
+@-moz-keyframes light {
+ 0% {
+   opacity: 0.3;
+ }
+ 50% {
+   opacity: 1;
+ }
+ 100% {
+   opacity: 0.3;
+ }
+}
+
+@-moz-keyframes beam {
+ 0% {
+   opacity: 0.3;
+ }
+ 50% {
+   opacity: 0.8;
+ }
+ 100% {
+   opacity: 0.3;
+ }
+}
+
+@-webkit-keyframes light {
+ 0% {
+   opacity: 0.3;
+ }
+ 50% {
+   opacity: 1;
+ }
+ 100% {
+   opacity: 0.3;
+ }
+}
+
+
+@-webkit-keyframes beam {
+ 0% {
+   opacity: 0.3;
+ }
+ 50% {
+   opacity: 0.8;
+ }
+ 100% {
+   opacity: 0.3;
+ }
+}
+
+
+@-ms-keyframes light {
+ 0% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+   filter: alpha(opacity=30);
+   opacity: 0.3;
+ }
+ 50% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 100% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+   filter: alpha(opacity=30);
+   opacity: 0.3;
+ }
+}
+
+
+@-ms-keyframes beam {
+ 0% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+   filter: alpha(opacity=30);
+   opacity: 0.3;
+ }
+ 50% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=80);
+   opacity: 0.8;
+ }
+ 100% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+   filter: alpha(opacity=30);
+   opacity: 0.3;
+ }
+}
+
+
+/*I don't reccommend you to support animation on Opera browser right now. It works very laggy.
+However If you want to use it just uncomment lines below*/
+
+
+/*@-o-keyframes light {
+ 0% {
+   opacity: 0.5;
+ }
+ 50% {
+   opacity: 1;
+ }
+ 100% {
+   opacity: 0.5;
+ }
+}*/
+
+
+
+/*@-o-keyframes beam {
+ 0% {
+   opacity: 0.5;
+ }
+ 50% {
+   opacity: 0.8;
+ }
+ 100% {
+   opacity: 0.5;
+ }
+}*/
+
+/************************************************
+Playlist
+************************************************/
+
+.playlist {
+	list-style: none;
+	margin: 0;
+}
+
+.playlist li {
+	margin-bottom: 20px;
+}
+
+.playlist li p {
+	margin-bottom: 0;
+	font-size: 9px;
+	text-transform: uppercase;
+	color: #9C9C9C;
+}
+
+/************************************************
+Audio player customization
+************************************************/
+/*I am using mediaelement plugin for playing music. Plugin website -> http://mediaelementjs.com/*/
+.mejs-container .mejs-controls  {
+	background: #0F0F0F;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-loaded {
+	background: #0088cc;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-total, .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+	background: #000;
+}
+
+.mejs-controls .mejs-time-rail span, .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current, .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+	border-radius: 0;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-current, .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+	background: #F5F5F5;
+}
+
+
+
+/************************************************
+Responsive styles
+************************************************/
+@media (max-width: 979px) {
+
+	.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+		border-radius: 0;
+	}
+
+	.navbar li > ul {
+		opacity: 1;
+		visibility: visible;
+		position: relative;
+		margin-left: 20px;
+		box-shadow: none;
+		width: 100%;
+	}
+
+	.navbar li > ul a {
+		border-top:none;
+	}
+
+	.nav-collapse .nav {
+		padding-top: 20px;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.top_twitter span.tweet {
+		margin-bottom: 49px;
+	}
+
+	.top_twitter .icon-twitter {
+		bottom: 34px;
+	}
+}
+
+
+
+
+/************************************************
+*************************************************
+Color schemes
+*************************************************
+************************************************/
+
+/*To add color scheme to your website just add scheme color name to body class (body class="purple")*/
+/*!note! default style is blue*/
+
+/************************************************
+Purple
+************************************************/
+body.purple a {
+	color: #9130e5;
+}
+
+body.purple a:hover {
+	color: #ac4cff;
+}
+
+body.purple .btn-primary {
+	background: #882bd9;
+}
+
+body.purple .btn-primary:hover {
+	background: #6814b3;
+}
+
+body.purple .carousel-control {
+	background: #882bd9;
+}
+
+body.purple .navbar .brand {
+	background: url(../img/logo_purple.png) no-repeat;
+}
+
+body.purple .top_twitter .icon-twitter {
+	text-shadow: 0 0 8px hsla(272, 80%, 45%, 1), 0 1px 2px hsla(0, 0%, 0%, 0.7);
+}
+
+body.purple .navbar .nav > li > a:hover, body.purple .navbar li > ul a:hover {
+	background: #882bd9;
+}
+
+body.purple .nav-tabs.nav-stacked > li.active > a:before {
+	background: #882bd9;
+}
+
+body.purple .booking {
+	box-shadow: 0 1px 1px #000 , 0 2px 2px hsla(0, 0%, 0%, 0.6), 0 0 35px hsla(272, 80%, 45%, 0.15), inset 0 0 1px hsla(0, 0%, 100%, 0.35);
+}
+
+body.purple a.hover_image .mask {
+	background: url(../img/dig_bg.png) repeat #882bd9;
+}
+
+body.purple .event .box_mini {
+	border-top: 1px solid #882bd9;
+}
+
+body.purple .event .box_mini:before {
+	border-top: 1px solid #882bd9;
+	border-left: 1px solid #882bd9;
+}
+
+body.purple textarea:focus,
+body.purple input[type="text"]:focus,
+body.purple input[type="password"]:focus,
+body.purple input[type="datetime"]:focus,
+body.purple input[type="datetime-local"]:focus,
+body.purple input[type="date"]:focus,
+body.purple input[type="month"]:focus,
+body.purple input[type="time"]:focus,
+body.purple input[type="week"]:focus,
+body.purple input[type="number"]:focus,
+body.purple input[type="email"]:focus,
+body.purple input[type="url"]:focus,
+body.purple input[type="search"]:focus,
+body.purple input[type="tel"]:focus,
+body.purple input[type="color"]:focus,
+body.purple.uneditable-input:focus {
+	border-color: hsla(272, 71%, 69%, 0.8);
+	box-shadow: inset 0 1px 1px hsla(0, 0%, 0%, 0.75), 0 0 8px hsla(272, 71%, 69%, 0.6);
+}
+
+body.purple .nav-tabs.nav-stacked > li.active > a {
+	background: #882bd9;
+	border-right: 1px solid #882bd9;
+}
+
+body.purple .mejs-controls .mejs-time-rail .mejs-time-loaded {
+	background: hsl(272, 80%, 45%);
+}
+
+body.purple .beam {
+	background: hsla(272, 80%, 25%, 0.06);
+}
+
+body.purple .light_bg {
+	background: url(../img/light_bg_purple.png) 
+}
+
+body.purple .light_1 {
+	background: url(../img/light_1_purple.png) 
+}
+
+body.purple .light_2 {
+	background: url(../img/light_2_purple.png) 
+}
+
+
+/************************************************
+Red
+************************************************/
+body.red a {
+	color: #f24b4b;
+}
+
+body.red a:hover {
+	color: #ff4c4c;
+}
+
+body.red .btn-primary {
+	background: #e54545;
+}
+
+body.red .btn-primary:hover {
+	background: #bf3b3b;
+}
+
+body.red .carousel-control {
+	background: #e54545;
+}
+
+body.red .navbar .brand {
+	background: url(../img/logo_red.png) no-repeat;
+}
+
+body.red .top_twitter .icon-twitter {
+	text-shadow: 0 0 8px hsla(0, 70%, 50%, 1), 0 1px 2px hsla(0, 0%, 0%, 0.7);
+}
+
+body.red .navbar .nav > li > a:hover, body.red .navbar li > ul a:hover {
+	background: #e54545;
+}
+
+body.red .nav-tabs.nav-stacked > li.active > a:before {
+	background: #e54545;
+}
+
+body.red .booking {
+	box-shadow: 0 1px 1px #000 , 0 2px 2px hsla(0, 0%, 0%, 0.6), 0 0 35px hsla(0, 70%, 50%, 0.15), inset 0 0 1px hsla(0, 0%, 100%, 0.35);
+}
+
+body.red a.hover_image .mask {
+	background: url(../img/dig_bg.png) repeat #e54545;
+}
+
+body.red .event .box_mini {
+	border-top: 1px solid #e54545;
+}
+
+body.red .event .box_mini:before {
+	border-top: 1px solid #e54545;
+	border-left: 1px solid #e54545;
+}
+
+body.red textarea:focus,
+body.red input[type="text"]:focus,
+body.red input[type="password"]:focus,
+body.red input[type="datetime"]:focus,
+body.red input[type="datetime-local"]:focus,
+body.red input[type="date"]:focus,
+body.red input[type="month"]:focus,
+body.red input[type="time"]:focus,
+body.red input[type="week"]:focus,
+body.red input[type="number"]:focus,
+body.red input[type="email"]:focus,
+body.red input[type="url"]:focus,
+body.red input[type="search"]:focus,
+body.red input[type="tel"]:focus,
+body.red input[type="color"]:focus,
+body.red.uneditable-input:focus {
+	border-color: hsla(0, 71%, 63%, 0.8);
+	box-shadow: inset 0 1px 1px hsla(0, 0%, 0%, 0.75), 0 0 8px hsla(0, 71%, 63%, 0.6);
+}
+
+body.red .nav-tabs.nav-stacked > li.active > a {
+	background: #e54545;
+	border-right: 1px solid #e54545;
+}
+
+body.red .mejs-controls .mejs-time-rail .mejs-time-loaded {
+	background: hsl(0, 70%, 40%);
+}
+
+body.red .beam {
+	background: hsla(0, 70%, 30%, 0.06);
+}
+
+body.red .light_bg {
+	background: url(../img/light_bg_red.png) 
+}
+
+body.red .light_1 {
+	background: url(../img/light_1_red.png) 
+}
+
+body.red .light_2 {
+	background: url(../img/light_2_red.png) 
+}
+
+
+
+/************************************************
+Pink
+************************************************/
+body.pink a {
+	color: #d92eb7;
+}
+
+body.pink a:hover {
+	color: #ff33d6;
+}
+
+body.pink .btn-primary {
+	background: #cc29ab;
+}
+
+body.pink .btn-primary:hover {
+	background: #a6238c;
+}
+
+body.pink .carousel-control {
+	background: #cc29ab;
+}
+
+body.pink .navbar .brand {
+	background: url(../img/logo_pink.png) no-repeat;
+}
+
+body.pink .top_twitter .icon-twitter {
+	text-shadow: 0 0 8px hsla(312, 80%, 40%, 1), 0 1px 2px hsla(0, 0%, 0%, 0.7);
+}
+
+body.pink .navbar .nav > li > a:hover, body.pink .navbar li > ul a:hover {
+	background: #cc29ab;
+}
+
+body.pink .nav-tabs.nav-stacked > li.active > a:before {
+	background: #cc29ab;
+}
+
+body.pink .booking {
+	box-shadow: 0 1px 1px #000 , 0 2px 2px hsla(0, 0%, 0%, 0.6), 0 0 35px hsla(312, 80%, 40%, 0.15), inset 0 0 1px hsla(0, 0%, 100%, 0.35);
+}
+
+body.pink a.hover_image .mask {
+	background: url(../img/dig_bg.png) repeat #cc29ab;
+}
+
+body.pink .event .box_mini {
+	border-top: 1px solid #cc29ab;
+}
+
+body.pink .event .box_mini:before {
+	border-top: 1px solid #cc29ab;
+	border-left: 1px solid #cc29ab;
+}
+
+body.pink textarea:focus,
+body.pink input[type="text"]:focus,
+body.pink input[type="password"]:focus,
+body.pink input[type="datetime"]:focus,
+body.pink input[type="datetime-local"]:focus,
+body.pink input[type="date"]:focus,
+body.pink input[type="month"]:focus,
+body.pink input[type="time"]:focus,
+body.pink input[type="week"]:focus,
+body.pink input[type="number"]:focus,
+body.pink input[type="email"]:focus,
+body.pink input[type="url"]:focus,
+body.pink input[type="search"]:focus,
+body.pink input[type="tel"]:focus,
+body.pink input[type="color"]:focus,
+body.pink.uneditable-input:focus {
+	border-color: hsla(312, 81%, 63%, 0.8);
+	box-shadow: inset 0 1px 1px hsla(0, 0%, 0%, 0.75), 0 0 8px hsla(312, 81%, 63%, 0.6);
+}
+
+body.pink .nav-tabs.nav-stacked > li.active > a {
+	background: #cc29ab;
+	border-right: 1px solid #cc29ab;
+}
+
+body.pink .mejs-controls .mejs-time-rail .mejs-time-loaded {
+	background: hsl(315, 80%, 40%);
+}
+
+body.pink .beam {
+	background: hsla(315, 80%, 20%, 0.06);
+}
+
+body.pink .light_bg {
+	background: url(../img/light_bg_pink.png) 
+}
+
+body.pink .light_1 {
+	background: url(../img/light_1_pink.png) 
+}
+
+body.pink .light_2 {
+	background: url(../img/light_2_pink.png) 
+}
+
+
+
+/************************************************
+Yellow
+************************************************/
+body.yellow a {
+	color: #f8e817;
+}
+
+body.yellow a:hover {
+	color: #ffee80;
+}
+
+body.yellow .btn-primary {
+	background: #d4bb19;
+}
+
+body.yellow .btn-primary:hover {
+	background: #a69005;
+}
+
+body.yellow .carousel-control {
+	background: #d4bb19;
+}
+
+body.yellow .navbar .brand {
+	background: url(../img/logo_yellow.png) no-repeat;
+}
+
+body.yellow .top_twitter .icon-twitter {
+	text-shadow: 0 0 8px hsla(52, 88%, 43%, 1), 0 1px 2px hsla(0, 0%, 0%, 0.7);
+}
+
+body.yellow .navbar .nav > li > a:hover, body.yellow .navbar li > ul a:hover {
+	background: #d4bb19;
+}
+
+body.yellow .nav-tabs.nav-stacked > li.active > a:before {
+	background: #d4bb19;
+}
+
+body.yellow .booking {
+	box-shadow: 0 1px 1px #000 , 0 2px 2px hsla(0, 0%, 0%, 0.6), 0 0 35px hsla(52, 88%, 43%, 0.15), inset 0 0 1px hsla(0, 0%, 100%, 0.35);
+}
+
+body.yellow a.hover_image .mask {
+	background: url(../img/dig_bg.png) repeat #d4bb19;
+}
+
+body.yellow .event .box_mini {
+	border-top: 1px solid #d4bb19;
+}
+
+body.yellow .event .box_mini:before {
+	border-top: 1px solid #d4bb19;
+	border-left: 1px solid #d4bb19;
+}
+
+body.yellow textarea:focus,
+body.yellow input[type="text"]:focus,
+body.yellow input[type="password"]:focus,
+body.yellow input[type="datetime"]:focus,
+body.yellow input[type="datetime-local"]:focus,
+body.yellow input[type="date"]:focus,
+body.yellow input[type="month"]:focus,
+body.yellow input[type="time"]:focus,
+body.yellow input[type="week"]:focus,
+body.yellow input[type="number"]:focus,
+body.yellow input[type="email"]:focus,
+body.yellow input[type="url"]:focus,
+body.yellow input[type="search"]:focus,
+body.yellow input[type="tel"]:focus,
+body.yellow input[type="color"]:focus,
+body.yellow.uneditable-input:focus {
+	border-color: hsla(52, 89%, 66%, 0.8);
+	box-shadow: inset 0 1px 1px hsla(0, 0%, 0%, 0.75), 0 0 8px hsla(52, 89%, 66%, 0.6);
+}
+
+body.yellow .nav-tabs.nav-stacked > li.active > a {
+	background: #d4bb19;
+	border-right: 1px solid #d4bb19;
+}
+
+body.yellow .mejs-controls .mejs-time-rail .mejs-time-loaded {
+	background: hsl(55, 88%, 43%);
+}
+
+body.yellow .beam {
+	background: hsla(55, 88%, 23%, 0.06);
+}
+
+body.yellow .light_bg {
+	background: url(../img/light_bg_yellow.png) 
+}
+
+body.yellow .light_1 {
+	background: url(../img/light_1_yellow.png) 
+}
+
+body.yellow .light_2 {
+	background: url(../img/light_2_yellow.png) 
+}
+
+
+
+#content_load {
+	display: none;
+}
+
+/*!note! I have created mystyle.css stylesheet file for you.
+If you want to add some more styling better way to do it there.*/
+
+/*Have a nice day :)*/
